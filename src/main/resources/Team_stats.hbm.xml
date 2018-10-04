@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="nba.schema.hibernate.Team_stats" table="team_stats">
+        <id name="team_stats_id">
+            <generator class="increment"/>
+        </id>
+        <property name="off_points"/>
+        <property name="def_points"/>
+        <property name="off_rating"/>
+        <property name="def_rating"/>
+        <property name="champ_rating"/>
+        <property name="organisation"/>
+        <property name="team_id"/>
+    </class>
+</hibernate-mapping>

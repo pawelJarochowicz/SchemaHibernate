@@ -1,0 +1,18 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/nba2?serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <mapping resource="Coach.hbm.xml" />
+        <mapping resource="Coach_stats.hbm.xml" />
+        <mapping resource="Player.hbm.xml" />
+        <mapping resource="Player_stats.hbm.xml" />
+        <mapping resource="Team.hbm.xml" />
+        <mapping resource="Team_stats.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

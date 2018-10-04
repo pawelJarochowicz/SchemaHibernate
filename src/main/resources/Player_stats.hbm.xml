@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="nba.schema.hibernate.Player_stats" table="player_stats">
+        <id name="player_stats_id">
+            <generator class="increment"/>
+        </id>
+        <property name="points"/>
+        <property name="rebounds"/>
+        <property name="assists"/>
+        <property name="off_rat"/>
+        <property name="def_rat"/>
+        <property name="three_points"/>
+        <property name="clutch"/>
+        <property name="goat"/>
+        <property name="player_id"/>
+    </class>
+</hibernate-mapping>
